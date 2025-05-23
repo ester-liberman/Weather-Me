@@ -1,0 +1,8 @@
+<button mat-icon-button
+        (click)="toggleFavorite(); animateFavorite = true"
+        [ngStyle]="{ 'color': isFavorite() ? '#f4bb74' : '' }"
+        [matTooltip]="isFavorite() ? 'Remove from favorites' : 'Add to favorites'"
+        [ngClass]="{ 'pop-animation': animateFavorite }"
+        (animationend)="animateFavorite = false">
+  <mat-icon>{{ isFavorite() ? 'favorite' : 'favorite_border' }}</mat-icon>
+</button>

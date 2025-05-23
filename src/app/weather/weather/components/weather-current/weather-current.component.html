@@ -1,0 +1,42 @@
+
+<mat-card *ngIf="weather() as weather" class="weather-card mat-elevation-z4">
+  <mat-card-header>
+    <div  class="weather-avatar">
+      <img
+        [src]="'https://developer.accuweather.com/sites/default/files/' + (weather.WeatherIcon < 10 ? '0' + weather.WeatherIcon : weather.WeatherIcon) + '-s.png'"
+        alt="Weather Icon"
+      />
+    </div>
+    <mat-card-title>Current Weather in {{ city() }}</mat-card-title>
+    <mat-card-subtitle>{{ weather.WeatherText }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p class="text-muted text-sm">
+      <strong>Last updated:</strong>
+      {{ weather.LocalObservationDateTime | date: 'dd/MM/yyyy HH:mm' }}
+    </p>
+
+    <div class="weather-details">
+      <p>
+        <strong>Temperature:</strong>
+        {{
+          unitIsMetric()
+            ? weather.Temperature.Metric.Value + '°' + weather.Temperature.Metric.Unit
+            : weather.Temperature.Imperial.Value + '°' + weather.Temperature.Imperial.Unit
+        }}
+      </p>
+      <p>
+        <strong>Time of Day:</strong> {{ weather.IsDayTime ? 'Day' : 'Night' }}
+      </p>
+      <p *ngIf="weather.HasPrecipitation">
+        <strong>Precipitation Type:</strong> {{ weather.PrecipitationType || 'Present' }}
+      </p>
+    </div>
+    <app-clothing-ai [weather]="weather" [unitIsMetric]="unitIsMetric()"></app-clothing-ai>
+  </mat-card-content>
+</mat-card>
+
+<div *ngIf="!weather()" class="no-data">
+  No weather data found.
+</div>

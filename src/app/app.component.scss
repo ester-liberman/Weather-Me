@@ -1,0 +1,36 @@
+#app-wrapper {
+    display: flex;
+    width: 100%;
+
+    #loader{
+        position:absolute;
+        width: 100%;
+    }
+
+    #sidenav-container {
+        width: 330px;
+        padding: 20px;
+        background: linear-gradient(to bottom, #f4bb74, #ebdecb 30%);
+
+        h1 {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+
+        #slide-toggle {
+            label {
+                font-size: 13px;
+            }
+            margin-bottom: 16px;
+        }
+
+
+    }
+
+    #content-wrapper {
+        margin: 20px;
+        width: 100%;
+    }
+}

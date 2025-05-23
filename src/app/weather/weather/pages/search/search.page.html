@@ -1,0 +1,27 @@
+<div class="container">
+  <div style="display: flex; align-items: center; gap: 1rem;">
+    <app-search-bar
+      [(selectedCity)]="selectedCity"
+      (citySelected)="onCitySelected($event)">
+    </app-search-bar>
+
+    <app-favorite 
+      [selectedCity]="selectedCity()"
+      *ngIf="selectedCity()">
+    </app-favorite>
+  </div>
+
+  <app-weather-current
+    class="fade-in"
+    *ngIf="currentWeather()"
+    [city]="selectedCityName()"
+    [unitIsMetric]="unitIsMetric()"
+    [weather]="currentWeather()">
+  </app-weather-current>
+
+  <app-weather-forecast
+    class="fade-in"
+    *ngIf="forecast()"
+    [forecast]="forecast()">
+  </app-weather-forecast>
+</div>

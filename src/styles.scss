@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-progress-bar .mat-progress-bar-buffer {
+    background: rgb(184, 184, 184);
+}
+  
+mat-progress-bar .mat-progress-bar-fill::after {
+    background: #8fbd11;
+}
+
+
+body.dark-theme {
+    background-color: #121212 !important;
+    color: white !important;
+    p,strong {
+        background-color: white !important;
+        color: #121212 !important;
+    }
+    div {
+        color: #121212 !important;
+    }
+    input.mat-mdc-input-element,
+    mat-icon {
+        color: white !important;
+    } 
+}
+.search-wrapper .mat-mdc-form-field-subscript-wrapper {
+    display: none !important;
+}

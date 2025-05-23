@@ -1,0 +1,96 @@
+{
+    "Headline": {
+      "EffectiveDate": "2025-05-22T20:00:00+03:00",
+      "EffectiveEpochDate": 1747933200,
+      "Severity": 7,
+      "Text": "Thunderstorms expected Thursday evening",
+      "Category": "thunderstorm",
+      "EndDate": "2025-05-23T08:00:00+03:00",
+      "EndEpochDate": 1747972800,
+      "MobileLink": "http://m.accuweather.com/en/forecast/headline",
+      "Link": "http://www.accuweather.com/en/forecast/headline"
+    },
+        "DailyForecasts": [
+          {
+            "Date": "2025-05-21T07:00:00+03:00",
+            "EpochDate": 1747800000,
+            "Temperature": {
+              "Minimum": { "Value": 16.5 },
+              "Maximum": { "Value": 28.7 }
+            },
+            "Day": {
+              "Icon": 3,
+              "IconPhrase": "Partly sunny"
+            },
+            "Night": {
+              "Icon": 38,
+              "IconPhrase": "Mostly cloudy"
+            }
+          },
+          {
+            "Date": "2025-05-22T07:00:00+03:00",
+            "EpochDate": 1747886400,
+            "Temperature": {
+              "Minimum": { "Value": 17.0 },
+              "Maximum": { "Value": 29.2 }
+            },
+            "Day": {
+              "Icon": 6,
+              "IconPhrase": "Mostly cloudy"
+            },
+            "Night": {
+              "Icon": 35,
+              "IconPhrase": "Partly cloudy"
+            }
+          },
+          {
+            "Date": "2025-05-23T07:00:00+03:00",
+            "EpochDate": 1747972800,
+            "Temperature": {
+              "Minimum": { "Value": 18.3 },
+              "Maximum": { "Value": 30.0 }
+            },
+            "Day": {
+              "Icon": 1,
+              "IconPhrase": "Sunny"
+            },
+            "Night": {
+              "Icon": 33,
+              "IconPhrase": "Clear"
+            }
+          },
+          {
+            "Date": "2025-05-24T07:00:00+03:00",
+            "EpochDate": 1748059200,
+            "Temperature": {
+              "Minimum": { "Value": 19.1 },
+              "Maximum": { "Value": 31.4 }
+            },
+            "Day": {
+              "Icon": 2,
+              "IconPhrase": "Mostly sunny"
+            },
+            "Night": {
+              "Icon": 36,
+              "IconPhrase": "Intermittent clouds"
+            }
+          },
+          {
+            "Date": "2025-05-25T07:00:00+03:00",
+            "EpochDate": 1748145600,
+            "Temperature": {
+              "Minimum": { "Value": 20.0 },
+              "Maximum": { "Value": 32.1 }
+            },
+            "Day": {
+              "Icon": 4,
+              "IconPhrase": "Intermittent clouds"
+            },
+            "Night": {
+              "Icon": 37,
+              "IconPhrase": "Hazy moonlight"
+            }
+          }
+        ]   
+  }
+  

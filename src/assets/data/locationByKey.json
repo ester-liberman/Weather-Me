@@ -1,0 +1,50 @@
+{
+    "Version": 1,
+    "Key": "325876",
+    "Type": "City",
+    "Rank": 51,
+    "LocalizedName": "Telford - json",
+    "EnglishName": "Telford",
+    "PrimaryPostalCode": "TF3 2",
+    "IsAlias": false,
+    "DataSets": [
+      "AirQualityCurrentConditions",
+      "AirQualityForecasts",
+      "Alerts",
+      "DailyPollenForecast"
+    ],
+    "GeoPosition": {
+      "Latitude": 52.677,
+      "Longitude": -2.436
+    },
+    "AdministrativeArea": {
+      "ID": "TFW",
+      "LocalizedName": "Telford and Wrekin",
+      "EnglishName": "Telford and Wrekin",
+      "Level": 1
+    },
+    "Country": {
+      "ID": "GB",
+      "LocalizedName": "United Kingdom",
+      "EnglishName": "United Kingdom"
+    },
+    "Region": {
+      "ID": "EUR",
+      "LocalizedName": "Europe",
+      "EnglishName": "Europe"
+    },
+    "SupplementalAdminAreas": [
+      {
+        "Level": 0,
+        "LocalizedName": "England",
+        "EnglishName": "England"
+      }
+    ],
+    "TimeZone": {
+      "Code": "BST",
+      "Name": "Europe/London",
+      "GmtOffset": 1,
+      "IsDaylightSaving": true
+    }
+  }
+  

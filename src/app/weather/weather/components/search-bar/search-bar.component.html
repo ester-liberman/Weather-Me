@@ -1,0 +1,19 @@
+<div class="search-wrapper">
+  <mat-form-field class="search-field" appearance="outline">
+    <input
+      type="text"
+      matInput
+      placeholder="Search for a city..."
+      [formControl]="searchControl"
+      [matAutocomplete]="auto"
+      (keydown)="validateEnglishInput($event)"
+    />
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option
+        *ngFor="let city of searchResults()"
+        (click)="selectCity(city)">
+        {{ city.LocalizedName }}, {{ city.Country?.LocalizedName }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</div>
