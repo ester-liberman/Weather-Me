@@ -17,7 +17,7 @@ export class WeatherService {
 
   getForecast(locationKey: string): Observable<Forecast> {
     // if (environment.jsonMode){
-      return this.httpClient.get<Forecast>('assets/data/weather-forecast.json');
+      // return this.httpClient.get<Forecast>('assets/data/weather-forecast.json');
     // }
     const isMetric = this.isMetric ? 'true' : 'false';
 
@@ -30,7 +30,7 @@ export class WeatherService {
 
   getCurrentWeather(locationKey: string): Observable<CurrentWeather> {
     // if (environment.jsonMode){
-      return this.httpClient.get<CurrentWeather>('assets/data/weather-current.json');
+      // return this.httpClient.get<CurrentWeather>('assets/data/weather-current.json');
     // }
 
     let params: HttpParams = new HttpParams();

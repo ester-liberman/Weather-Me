@@ -12,7 +12,7 @@ export class LocationService {
 
   getAutocompleteLocation(searchText: string): Observable<Location[]> {
     // if (environment.jsonMode){
-      return this.httpClient.get<Location[]>('assets/data/location.json');
+      // return this.httpClient.get<Location[]>('assets/data/location.json');
     // }
 
     let params: HttpParams = new HttpParams();
@@ -24,7 +24,7 @@ export class LocationService {
 
   getLocationByKey(locationKey: string): Observable<Location> {
     // if (environment.jsonMode){
-      return this.httpClient.get<Location>(`assets/data/locationByKey.json`);
+      // return this.httpClient.get<Location>(`assets/data/locationByKey.json`);
     // }
     let params: HttpParams = new HttpParams();
     params = params.append('apikey', environment.apiKey);
