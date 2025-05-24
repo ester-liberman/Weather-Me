@@ -16,9 +16,6 @@ export class WeatherService {
   constructor(private httpClient: HttpClient) {}
 
   getForecast(locationKey: string): Observable<Forecast> {
-    // if (environment.jsonMode){
-      // return this.httpClient.get<Forecast>('assets/data/weather-forecast.json');
-    // }
     const isMetric = this.isMetric ? 'true' : 'false';
 
     let params: HttpParams = new HttpParams();
@@ -29,10 +26,6 @@ export class WeatherService {
   }
 
   getCurrentWeather(locationKey: string): Observable<CurrentWeather> {
-    // if (environment.jsonMode){
-      // return this.httpClient.get<CurrentWeather>('assets/data/weather-current.json');
-    // }
-
     let params: HttpParams = new HttpParams();
     params = params.append('apikey', environment.apiKey);
 
